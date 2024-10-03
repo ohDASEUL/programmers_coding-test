@@ -3,7 +3,5 @@ function solution(my_string, is_suffix) {
   for (let i = 0; i < my_string.length; i++) {
       answer.push(my_string.slice(i));
   }
-  answer.sort();
-  
   return Number(answer.includes(is_suffix));
 }
