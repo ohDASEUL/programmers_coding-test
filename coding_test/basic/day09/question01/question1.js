@@ -1,10 +1,12 @@
-function solution(x1, x2, x3, x4) {
-  var answer = true;
+function solution(intStrs, k, s, l) {
+  let result = [];
+  for (let i = 0; i < intStrs.length; i++) {
   
-  let x1ORx2 = x1 || x2
-  let x3ORx4 = x3 || x4
-  
-  answer = x1ORx2 && x3ORx4
-  
-  return answer;
+      let sliceStr = intStrs[i].slice(s, s + l)
+      let changeInt = Number(sliceStr)
+      if(changeInt > k){
+          result.push(changeInt);
+      }
+  }
+  return result
 }
