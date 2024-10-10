@@ -1,10 +1,6 @@
-function solution(n, k) {
-    var answer = [];
-    for (let i = 1; i <= n; i++){
-        if(i%k===0){
-            answer.push(i);
-        }
-    }
-    answer.sort((a, b) => a - b);
+function solution(my_string, indices) {
+    let answer = '';
+    my_string = [...my_string];
+    answer = my_string.filter((_, index) => !indices.includes(index)).join('');
     return answer;
 }
