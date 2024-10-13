@@ -1,5 +1,5 @@
 function solution(arr, intervals) {
-  var answer = [];
+  let answer = [];
   
   answer = answer.concat(arr.slice(intervals[0][0], intervals[0][1] + 1))
   

@@ -1,5 +1,5 @@
 function solution(n, slicer, num_list) {
-  var answer = [];
+  let answer = [];
   a = slicer[0], b = slicer[1], c = slicer[2]
   switch(n){
       case 1:
